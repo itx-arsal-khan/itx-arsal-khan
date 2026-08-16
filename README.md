@@ -1,7 +1,18 @@
-<h1 align="left">Hi, I'm Arslan Ahmed Khan 👋</h1>
+<!-- ================= HEADER ================= -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:2563eb&height=220&section=header&text=Arslan%20Ahmed%20Khan&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%7C%20Applied%20AI%20%2F%20ML&descAlignY=55&descSize=18" width="100%"/>
+</p>
 
-<p align="left">
-  Backend-leaning full-stack developer building applications that combine practical engineering with applied AI/ML.
+<!-- ================= TYPING ANIMATION ================= -->
+<p align="center">
+  <a href="#">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=2563EB&center=true&vCenter=true&width=600&lines=Building+full-stack+apps+with+React+%2B+Flask;Exploring+semantic+search+%26+FAISS;Learning+in+public%2C+one+commit+at+a+time" alt="Typing SVG" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=itx-arsal-khan&style=flat&color=2563eb&label=Profile+Views" />
+  <img src="https://img.shields.io/github/followers/itx-arsal-khan?style=flat&color=2563eb&label=Followers" />
 </p>
 
 ---
@@ -12,31 +23,43 @@
 - Exploring **semantic search** and **AI-powered backends** (embeddings, FAISS, NLP pipelines)
 - Sharpening fundamentals in data handling with **Pandas** and performance-focused backend design
 
+<br>
+
 ### 🛠️ Tech Stack
 
-**Languages**
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,js,html,css,react,flask,git,vscode&theme=dark" />
+</p>
 
-**Frameworks & Tools**
-![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+<p align="center">
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/FAISS-00599C?style=for-the-badge&logo=meta&logoColor=white" />
+</p>
 
 ---
 
 ### 📌 Featured Projects
 
+<table>
+<tr>
+<td width="50%">
+
 **[fais-quizsearch-engine](https://github.com/itx-arsal-khan/fais-quizsearch-engine)**
-AI-powered full-stack quiz application with semantic search and dynamic question generation. Backend built with Flask + Pandas, semantic retrieval powered by FAISS.
+AI-powered full-stack quiz app with semantic search and dynamic question generation. Flask + Pandas backend, FAISS-powered retrieval.
+
 `Python` `Flask` `FAISS` `Pandas`
 
+</td>
+<td width="50%">
+
 **[myfirstwebproject](https://github.com/itx-arsal-khan/myfirstwebproject)**
-A university semester project — a Lost & Found portal for students to report, search, and claim lost items, with notes upload/download. Built with React.
+University Lost & Found portal — report, search, and claim lost items, with notes upload/download.
+
 `React` `JavaScript`
+
+</td>
+</tr>
+</table>
 
 > More projects in progress — check [pinned repos](https://github.com/itx-arsal-khan?tab=repositories) for the latest.
 
@@ -44,17 +67,34 @@ A university semester project — a Lost & Found portal for students to report, 
 
 ### 📊 GitHub Stats
 
-<p align="left">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=itx-arsal-khan&show_icons=true&theme=default&hide_border=true&count_private=true" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=itx-arsal-khan&layout=compact&hide_border=true" />
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=itx-arsal-khan&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=itx-arsal-khan&layout=compact&theme=tokyonight&hide_border=true" />
 </p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=itx-arsal-khan&theme=tokyonight&hide_border=true" />
+</p>
+
+<!-- ================= SNAKE CONTRIBUTION ANIMATION ================= -->
+### 🐍 Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/itx-arsal-khan/itx-arsal-khan/output/github-contribution-grid-snake-dark.svg" />
+</p>
+
+> ⚠️ This only renders once you add the GitHub Action below to this repo — see setup note at the bottom.
 
 ---
 
 ### 🤝 Connect
 
-<p align="left">
-  <!-- Add your links below — LinkedIn, email, portfolio -->
-  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" /></a>
+<p align="center">
+  <!-- Replace # with your real links -->
+  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2563eb,100:0f172a&height=100&section=footer"/>
 </p>
