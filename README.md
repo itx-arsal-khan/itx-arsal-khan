@@ -83,7 +83,7 @@ University Lost & Found portal — report, search, and claim lost items, with no
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=itx-arsal-khan&theme=tokyonight&hide_border=true" />
+  <img src="https://streak-stats.demolab.com/?user=itx-arsal-khan&theme=tokyonight&hide_border=true" />
 </p>
 
 <!-- ================= SNAKE CONTRIBUTION ANIMATION ================= -->
