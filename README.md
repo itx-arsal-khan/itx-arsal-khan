@@ -77,6 +77,8 @@ University Lost & Found portal — report, search, and claim lost items, with no
 
 ### 📊 GitHub Stats
 
+### 📊 GitHub Stats
+
 <p align="center">
   <img height="165" src="./profile/stats.svg" />
   <img height="165" src="./profile/top-langs.svg" />
