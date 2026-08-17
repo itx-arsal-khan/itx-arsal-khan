@@ -91,8 +91,8 @@ University Lost & Found portal — report, search, and claim lost items, with no
 
 <p align="center">
   <!-- Replace # with your real links -->
-  <a href="www.linkedin.com/in/arslan-ahmed-khan-b6b7812b4"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mypersonal8852@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
 <p align="center">
