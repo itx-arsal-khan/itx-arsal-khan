@@ -1,12 +1,11 @@
-
-</p><!-- ================= HEADER ================= -->
+<!-- ================= HEADER ================= -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:2563eb&height=220&section=header&text=Arslan%20Ahmed%20Khan&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%7C%20Applied%20AI%20%2F%20ML&descAlignY=55&descSize=18" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:2563eb&height=220&section=header&text=Arslan%20Ahmed%20Khan&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Flutter%20Developer%20%7C%20Frontend%20Developer%20%7C%20Aspiring%20SQA%20Engineer&descAlignY=55&descSize=16" width="100%"/>
 </p>
 
 <!-- ================= TYPING ANIMATION ================= -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=2563EB&center=true&vCenter=true&width=600&lines=Building+full-stack+apps+with+React+%2B+Flask;Exploring+semantic+search+%26+FAISS;Learning+in+public%2C+one+commit+at+a+time" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=2563EB&center=true&vCenter=true&width=600&lines=Building+cross-platform+apps+with+Flutter;Crafting+clean+frontend+interfaces;Learning+QA+%26+test+automation+fundamentals" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -18,16 +17,17 @@
 
 ### 🧭 Currently
 
-- Building full-stack applications with **React**, **Flask**, and **Python**
-- Exploring **semantic search** and **AI-powered backends** (embeddings, FAISS, NLP pipelines)
-- Sharpening fundamentals in data handling with **Pandas** and performance-focused backend design
+- Building cross-platform mobile apps with **Flutter** and **Dart**
+- Building frontend interfaces with **React** and **JavaScript**
+- Exploring **semantic search** and **AI-powered backends** (Flask, FAISS, Pandas)
+- Learning the fundamentals of **software quality assurance** and test automation
 
 <br>
 
 ### 🛠️ Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,html,css,react,flask,git,vscode&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=flutter,dart,react,js,html,css,python,flask,git,vscode&theme=dark" />
 </p>
 
 <p align="center">
@@ -41,7 +41,16 @@
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
+
+**[splitsmart](https://github.com/itx-arsal-khan/splitsmart)**
+
+Flutter app for splitting bills and shared expenses among groups — track who owes what and settle up.
+
+`Flutter` `Dart`
+
+</td>
+<td width="33%" valign="top">
 
 **[fais-quizsearch-engine](https://github.com/itx-arsal-khan/fais-quizsearch-engine)**
 
@@ -50,7 +59,7 @@ AI-powered full-stack quiz app with semantic search and dynamic question generat
 `Python` `Flask` `FAISS` `Pandas`
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 **[myfirstwebproject](https://github.com/itx-arsal-khan/myfirstwebproject)**
 
@@ -103,4 +112,3 @@ University Lost & Found portal — report, search, and claim lost items, with no
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2563eb,100:0f172a&height=100&section=footer"/>
 </p>
-
