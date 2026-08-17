@@ -1,0 +1,179 @@
+name: Generate GitHub Stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate stats cards
+        env:
+          GH_TOKEN: ${{ github.token }}
+          USERNAME: itx-arsal-khan
+        run: |
+          python3 <<'PY'
+          import json
+          import os
+          import subprocess
+          import urllib.request
+          from pathlib import Path
+
+          username = os.environ["USERNAME"]
+          token = os.environ["GH_TOKEN"]
+
+          headers = {
+              "Authorization": f"Bearer {token}",
+              "Accept": "application/vnd.github+json",
+              "X-GitHub-Api-Version": "2026-03-10",
+              "User-Agent": "github-stats-workflow"
+          }
+
+          def api(url):
+              req = urllib.request.Request(url, headers=headers)
+              with urllib.request.urlopen(req) as response:
+                  return json.loads(response.read())
+
+          # Get user information
+          user = api(f"https://api.github.com/users/{username}")
+
+          # Get repositories
+          repos = []
+          page = 1
+
+          while True:
+              data = api(
+                  f"https://api.github.com/users/{username}/repos"
+                  f"?per_page=100&page={page}&type=owner"
+              )
+
+              if not data:
+                  break
+
+              repos.extend(data)
+              page += 1
+
+              if len(data) < 100:
+                  break
+
+          public_repos = user.get("public_repos", 0)
+          followers = user.get("followers", 0)
+          following = user.get("following", 0)
+
+          stars = sum(repo.get("stargazers_count", 0) for repo in repos)
+
+          # Get language statistics
+          languages = {}
+
+          for repo in repos:
+              if repo.get("fork"):
+                  continue
+
+              try:
+                  repo_languages = api(
+                      f"https://api.github.com/repos/{username}/{repo['name']}/languages"
+                  )
+
+                  for language, amount in repo_languages.items():
+                      languages[language] = languages.get(language, 0) + amount
+
+              except Exception:
+                  pass
+
+          total_bytes = sum(languages.values())
+
+          if total_bytes:
+              language_percentages = {
+                  language: round((amount / total_bytes) * 100, 1)
+                  for language, amount in languages.items()
+              }
+          else:
+              language_percentages = {}
+
+          language_percentages = dict(
+              sorted(
+                  language_percentages.items(),
+                  key=lambda item: item[1],
+                  reverse=True
+              )[:6]
+          )
+
+          Path("profile").mkdir(exist_ok=True)
+
+          # -----------------------------
+          # GitHub Stats SVG
+          # -----------------------------
+
+          stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195">
+          <rect width="495" height="195" rx="10" fill="#1a1b27"/>
+          <text x="25" y="38" fill="#70a5fd" font-family="Arial, sans-serif" font-size="22" font-weight="bold">GitHub Stats</text>
+
+          <text x="30" y="80" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">{public_repos}</text>
+          <text x="30" y="102" fill="#8b949e" font-family="Arial, sans-serif" font-size="13">Public Repositories</text>
+
+          <text x="190" y="80" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">{followers}</text>
+          <text x="190" y="102" fill="#8b949e" font-family="Arial, sans-serif" font-size="13">Followers</text>
+
+          <text x="330" y="80" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">{following}</text>
+          <text x="330" y="102" fill="#8b949e" font-family="Arial, sans-serif" font-size="13">Following</text>
+
+          <text x="30" y="145" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">{stars}</text>
+          <text x="30" y="167" fill="#8b949e" font-family="Arial, sans-serif" font-size="13">Total Stars</text>
+
+          <text x="190" y="145" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">{len(repos)}</text>
+          <text x="190" y="167" fill="#8b949e" font-family="Arial, sans-serif" font-size="13">Repositories</text>
+          </svg>'''
+
+          Path("profile/stats.svg").write_text(stats_svg)
+
+          # -----------------------------
+          # Top Languages SVG
+          # -----------------------------
+
+          width = 495
+          height = 70 + (len(language_percentages) * 25)
+
+          rows = ""
+
+          y = 65
+
+          for language, percentage in language_percentages.items():
+              rows += f'''
+              <text x="30" y="{y}" fill="#ffffff" font-family="Arial, sans-serif" font-size="14">{language}</text>
+              <text x="390" y="{y}" fill="#8b949e" font-family="Arial, sans-serif" font-size="14">{percentage}%</text>
+              '''
+
+              y += 25
+
+          langs_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
+          <rect width="{width}" height="{height}" rx="10" fill="#1a1b27"/>
+          <text x="25" y="38" fill="#70a5fd" font-family="Arial, sans-serif" font-size="22" font-weight="bold">Top Languages</text>
+          {rows}
+          </svg>'''
+
+          Path("profile/top-langs.svg").write_text(langs_svg)
+
+          print("Generated:")
+          print("profile/stats.svg")
+          print("profile/top-langs.svg")
+          PY
+
+      - name: Commit generated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile/stats.svg profile/top-langs.svg
+
+          git diff --cached --quiet || git commit -m "Update GitHub stats"
+
+          git push
