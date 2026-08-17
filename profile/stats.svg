@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195">
+<rect width="495" height="195" rx="10" fill="#1a1b27"/>
+<text x="25" y="38" fill="#70a5fd" font-family="Arial, sans-serif" font-size="22" font-weight="bold">GitHub Stats</text>
+
+<text x="30" y="80" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">5</text>
+<text x="30" y="102" fill="#8b949e" font-family="Arial, sans-serif" font-size="13">Public Repositories</text>
+
+<text x="190" y="80" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">1</text>
+<text x="190" y="102" fill="#8b949e" font-family="Arial, sans-serif" font-size="13">Followers</text>
+
+<text x="330" y="80" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">1</text>
+<text x="330" y="102" fill="#8b949e" font-family="Arial, sans-serif" font-size="13">Following</text>
+
+<text x="30" y="145" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">0</text>
+<text x="30" y="167" fill="#8b949e" font-family="Arial, sans-serif" font-size="13">Total Stars</text>
+
+<text x="190" y="145" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">5</text>
+<text x="190" y="167" fill="#8b949e" font-family="Arial, sans-serif" font-size="13">Repositories</text>
+</svg>
