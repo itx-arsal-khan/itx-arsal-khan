@@ -1,9 +1,11 @@
 <!-- ================= HEADER ================= -->
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:2563eb&height=220&section=header&text=Arslan%20Ahmed%20Khan&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Flutter%20Developer%20%7C%20Frontend%20Developer%20%7C%20Aspiring%20SQA%20Engineer&descAlignY=55&descSize=16" width="100%"/>
 </p>
 
 <!-- ================= TYPING ANIMATION ================= -->
+
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=2563EB&center=true&vCenter=true&width=600&lines=Building+cross-platform+apps+with+Flutter;Crafting+clean+frontend+interfaces;Learning+QA+%26+test+automation+fundamentals" alt="Typing SVG" />
 </p>
@@ -17,10 +19,10 @@
 
 ### 🧭 Currently
 
-- Building cross-platform mobile apps with **Flutter** and **Dart**
-- Building frontend interfaces with **React** and **JavaScript**
-- Exploring **semantic search** and **AI-powered backends** (Flask, FAISS, Pandas)
-- Learning the fundamentals of **software quality assurance** and test automation
+* Building cross-platform mobile apps with **Flutter** and **Dart**
+* Building frontend interfaces with **React** and **JavaScript**
+* Exploring **semantic search** and **AI-powered backends** with Flask, FAISS, and Pandas
+* Learning the fundamentals of **software quality assurance** and test automation
 
 <br>
 
@@ -43,25 +45,27 @@
 <tr>
 <td width="33%" valign="top">
 
-**[splitsmart](https://github.com/itx-arsal-khan/splitsmart)**
+**[SplitSmart](https://github.com/itx-arsal-khan/splitsmart)**
 
 Flutter app for splitting bills and shared expenses among groups — track who owes what and settle up.
 
 `Flutter` `Dart`
 
 </td>
+
 <td width="33%" valign="top">
 
-**[fais-quizsearch-engine](https://github.com/itx-arsal-khan/fais-quizsearch-engine)**
+**[FAIS Quiz Search Engine](https://github.com/itx-arsal-khan/fais-quizsearch-engine)**
 
-AI-powered full-stack quiz app with semantic search and dynamic question generation. Flask + Pandas backend, FAISS-powered retrieval.
+AI-powered full-stack quiz app with semantic search and dynamic question generation. Flask + Pandas backend with FAISS-powered retrieval.
 
 `Python` `Flask` `FAISS` `Pandas`
 
 </td>
+
 <td width="33%" valign="top">
 
-**[myfirstwebproject](https://github.com/itx-arsal-khan/myfirstwebproject)**
+**[My First Web Project](https://github.com/itx-arsal-khan/myfirstwebproject)**
 
 University Lost & Found portal — report, search, and claim lost items, with notes upload/download.
 
@@ -71,20 +75,19 @@ University Lost & Found portal — report, search, and claim lost items, with no
 </tr>
 </table>
 
-> More projects in progress — check [pinned repos](https://github.com/itx-arsal-khan?tab=repositories) for the latest.
+> More projects in progress — check [pinned repositories](https://github.com/itx-arsal-khan?tab=repositories) for the latest.
 
 ---
 
 ### 📊 GitHub Stats
 
-### 📊 GitHub Stats
-
 <p align="center">
-  <img height="165" src="./profile/stats.svg" />
-  <img height="165" src="./profile/top-langs.svg" />
+  <img height="165" src="https://raw.githubusercontent.com/itx-arsal-khan/itx-arsal-khan/main/profile/stats.svg" />
+  <img height="165" src="https://raw.githubusercontent.com/itx-arsal-khan/itx-arsal-khan/main/profile/top-langs.svg" />
 </p>
 
-<!-- ================= SNAKE CONTRIBUTION ANIMATION ================= -->
+---
+
 ### 🐍 Contribution Snake
 
 <p align="center">
@@ -99,10 +102,12 @@ University Lost & Found portal — report, search, and claim lost items, with no
   <a href="https://www.linkedin.com/in/arslan-ahmed-khan-b6b7812b4" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-  <a href="mailto:mypersonal8852@gmail.com" target="_blank">
+
+  <a href="mailto:mypersonal8852@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
-  <a href="https://wa.me/923141830898" target="_blank">
+
+  <a href="https://wa.me/923141830898">
     <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
   </a>
 </p>
